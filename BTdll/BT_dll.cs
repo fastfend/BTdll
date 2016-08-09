@@ -22,9 +22,9 @@ using System.Windows.Threading;
 namespace BTdll
 {
     /// <summary>
-    /// This class contains methods and arrays used in strings etc.
+    /// This struct contains methods and arrays used in strings etc.
     /// </summary>
-    public class BT_Text
+    public struct BT_Text
     {
         /// <summary>
         /// Contains all ASCII and Polish letters.
@@ -576,6 +576,7 @@ namespace BTdll
     }
     /// <summary>
     /// This class contains methods for securing data etc.
+    /// TODO: Constructor etc.
     /// </summary>
     public class BT_Security
     {
@@ -637,6 +638,7 @@ namespace BTdll
     }
     /// <summary>
     /// This class is used for low-level keyboard hooking.
+    /// TODO: Clear code etc.
     /// </summary>
     public class BT_Hook
     {
@@ -712,9 +714,10 @@ namespace BTdll
         }
     }
     /// <summary>
-    /// This class contains methods for checking state of keys etc.
+    /// This struct contains methods for checking state of keys etc.
+    /// TODO: get IsCapslock
     /// </summary>
-    public class BT_Keys
+    public struct BT_Keys
     {
         [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true, CallingConvention = CallingConvention.Winapi)]
         public static extern short GetKeyState(int keyCode);
