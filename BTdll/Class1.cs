@@ -525,7 +525,7 @@ namespace BTdll
         /// <param name="key">Provide char to be converted.</param>
         public static string AutoConvertKey(string key)
         {
-            char _char = "";
+            char _char = ' ';
             try
             {
                 _char = key.ToLowerInvariant()[0];
@@ -575,7 +575,7 @@ namespace BTdll
         }
     }
     /// <summary>
-    /// This class contains methods and arrays used in strings etc.
+    /// This class contains methods for securing data etc.
     /// </summary>
     public class BT_Security
     {
@@ -636,7 +636,7 @@ namespace BTdll
         }
     }
     /// <summary>
-    /// This class contains methods for securing data etc.
+    /// This class is used for low-level keyboard hooking.
     /// </summary>
     public class BT_Hook
     {
